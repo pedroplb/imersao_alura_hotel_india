@@ -1,0 +1,7 @@
+import regras_de_negocio
+
+dados_tratados = regras_de_negocio.limpa_dados()
+dados_em_real = regras_de_negocio.calcula_preco_total_real(dados_tratados)
+dados_preco_esforco = regras_de_negocio.calcula_esforco(dados_em_real)
+regras_de_negocio.visualiza_preco_vs_rating(dados_preco_esforco)
+regras_de_negocio.visualiza_esforco_vs_rating(dados_preco_esforco)
